@@ -4,4 +4,8 @@ class ProductsController < ApplicationController
     render "index"
   end
 
+  def featured
+    render 'featured'
+  end
+  
 end

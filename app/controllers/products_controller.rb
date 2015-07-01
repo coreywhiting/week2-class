@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
 
+  def show
+    render "show"
+  end
+  
   def index
     render "index"
   end
@@ -7,5 +11,5 @@ class ProductsController < ApplicationController
   def featured
     render 'featured'
   end
-  
+
 end

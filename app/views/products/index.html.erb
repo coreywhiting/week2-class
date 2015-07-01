@@ -1,8 +1,16 @@
-<% product = [1,2,3,4,5].sample %>
+<form action="/details">
+  <input name="id" type="text" placeholder="Search...">
+  <input name="movie" type="text" placeholder="Apollo 13">
+  <input type="submit">
+</form>
 
+<h1>Product Catalog</h1>
 
-<% if product == 1 %>
+<%= image_tag "dice-1.png" %>
+
 <div>
+  <%= link_to "Click Here For Details", "/details?id=1" %>
+  <!-- <a href="/details?id=1">Click Here For Details</a> -->
   <p>
     <strong>
       <a href="http://www.amazon.com/dp/B00IOIJD5I">TDK A12 TREK Wireless Outdoor Speaker</a>
@@ -10,10 +18,9 @@
   </p>
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/816rAOJX-GL._SL1500_.jpg"></p>
 </div>
-<% end %>
 
-<% if product == 2 %>
 <div>
+  <a href="/details?id=2">Click Here For Details</a>
   <p>
     <strong>
       <a href="http://www.amazon.com/dp/B00BGO0QE">Fitbit Flex Wireless Activity + Sleep Wristband, Slate</a>
@@ -21,11 +28,9 @@
   </p>
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/51qrk3-c-lL._SL1500_.jpg"></p>
 </div>
-<% end %>
-
-<% if product == 3 %>
 
 <div>
+  <a href="/details?id=3">Click Here For Details</a>
   <p>
     <strong>
       <a href="http://www.amazon.com/dp/B00NIYNUF2">GoPro HERO4 BLACK 4K Action Camera</a>
@@ -33,10 +38,6 @@
   </p>
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/71X7ZijN3yL._SL1500_.jpg"></p>
 </div>
-
-<% end %>
-
-<% if product == 4 %>
 
 <div>
   <p>
@@ -47,10 +48,6 @@
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/71RMP9v4NQL._SL1500_.jpg"></p>
 </div>
 
-<% end %>
-
-<% if product == 5 %>
-
 <div>
   <p>
     <strong>
@@ -59,5 +56,3 @@
   </p>
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/811nvG%2BLgML._SL1500_.jpg"></p>
 </div>
-
-<% end %>

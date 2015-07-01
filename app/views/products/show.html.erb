@@ -1,24 +1,6 @@
+<% product = params["id"].to_i %>
 
-<style media="screen">
-  body {
-    font-family: Arial, sans-serif;
-    width: 960px;
-    margin: 12px auto;
-  }
-
-  div {
-    border: solid 2px gray;
-    box-shadow: 4px 4px 4px gray;
-    padding: 12px;
-    margin: 6px;
-  }
-</style>
-
-<% name = "Jeff" %>
-
-<h1>Howdy, <%= 2 * 10 %></h1>
-
-
+<% if product == 1 %>
 <div>
   <p>
     <strong>
@@ -27,7 +9,9 @@
   </p>
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/816rAOJX-GL._SL1500_.jpg"></p>
 </div>
+<% end %>
 
+<% if product == 2 %>
 <div>
   <p>
     <strong>
@@ -36,6 +20,9 @@
   </p>
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/51qrk3-c-lL._SL1500_.jpg"></p>
 </div>
+<% end %>
+
+<% if product == 3 %>
 
 <div>
   <p>
@@ -46,6 +33,10 @@
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/71X7ZijN3yL._SL1500_.jpg"></p>
 </div>
 
+<% end %>
+
+<% if product == 4 %>
+
 <div>
   <p>
     <strong>
@@ -55,6 +46,10 @@
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/71RMP9v4NQL._SL1500_.jpg"></p>
 </div>
 
+<% end %>
+
+<% if product == 5 %>
+
 <div>
   <p>
     <strong>
@@ -63,3 +58,5 @@
   </p>
   <p><img width="300px" src="http://ecx.images-amazon.com/images/I/811nvG%2BLgML._SL1500_.jpg"></p>
 </div>
+
+<% end %>
